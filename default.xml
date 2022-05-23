@@ -19,7 +19,7 @@
   <default revision="refs/heads/cm-10.1"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="6" />
 
   <!-- Include the Mer-hybris repos for packaging and images -->
   <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master"/>
@@ -95,39 +95,23 @@
 
   <!-- KERNELS AND DEVICES -->
   <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="refs/tags/0.0.3" />
-  <!-- i9305 SPECIFIC -->
-  <project path="device/samsung/i9305" name="mer-hybris/android_device_samsung_i9305" revision="hybris-10.1" />
-  <project path="kernel/samsung/smdk4412" name="mer-hybris/android_kernel_samsung_smdk4412" revision="hybris-10.1" />
-  <project path="device/samsung/smdk4412-common" name="mer-hybris/android_device_samsung_smdk4412-common" revision="hybris-10.1" />
-  <project path="device/samsung/smdk4412-qcom-common" name="CyanogenMod/android_device_samsung_smdk4412-qcom-common" />
-  <project path="hardware/samsung" name="mer-hybris/android_hardware_samsung" revision="hybris-10.1" />
 
-  <!-- <project path="device/samsung/maguro" name="CyanogenMod/android_device_samsung_maguro" />
-  <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
-  <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" />
-  <project path="device/samsung/manta" name="CyanogenMod/android_device_samsung_manta" />
-  <project path="kernel/samsung/manta" name="CyanogenMod/android_kernel_samsung_manta" /--> 
   <project path="device/lge/mako" name="mer-hybris/android_device_lge_mako" revision="hybris-10.1"/>
   <project path="kernel/lge/mako" name="mer-hybris/lge-kernel-mako" revision="hybris-10.1"/>
-
-  <!-- Google Nexus 7 (2012) -->
-  <project path="device/asus/grouper" name="CyanogenMod/android_device_asus_grouper" />
-  <project path="device/asus/tilapia" name="CyanogenMod/android_device_asus_tilapia" />
-  <project path="kernel/asus/grouper" name="mer-hybris/android_kernel_asus_grouper" />
-
-  <!-- Sony Xperia Z SPECIFIC -->
-  <project path="device/sony/common" name="CyanogenMod/android_device_sony_common" />
-  <project path="device/sony/fusion3-common" name="CyanogenMod/android_device_sony_fusion3-common" />
-  <project path="device/sony/qcom-common" name="CyanogenMod/android_device_sony_qcom-common" />
-  <project path="device/sony/yuga" name="CyanogenMod/android_device_sony_yuga" />
-  <project path="kernel/sony/yuga" name="mer-hybris/android_kernel_sony_apq8064" revision="hybris-10.1" />
+  
+  <!-- Goyawifi incomplete -->
+  <project path="kernel/samsung/goya" name="T110-pmOS/linux_kernel_pxa988" revision="master"/>
+  <project path="device/samsung/goyawifi" name="T110-android/android_device_samsung_goyawifi" revision="cm-11.0"/>
+  <project path="vendor/samsung/goya" name="T110-android/android_vendor_samsung_goya" revision="cm-11.0" />
+  <project path="hardware/marvell" name="T110-android/android_hardware_marvell" revision="cm-11.0" />
+  <project path="vendor/marvell/external" name="T110-android/android_vendor_marvell_external" revision="cm-11.0" />
+  <project path="device/samsung/marvell-common" name="T110-android/android_device_samsung_marvell-common" revision="cm-11.0" />
 
   <!-- I checked these repos, they're actually empty, but maybe one day we won't have to build clang -->
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="darwin" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="darwin" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/clang/linux-x86/3.1" name="platform/prebuilts/clang/linux-x86/3.1" groups="linux" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/clang/linux-x86/3.2" name="platform/prebuilts/clang/linux-x86/3.2" groups="linux" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
-
 
   <!-- PREBUILTS SECTION, CONSIDER GETTING RID OF SOME OF THOSE -->
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" groups="darwin,arm" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
