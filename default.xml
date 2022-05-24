@@ -46,11 +46,13 @@
   <project path="system/extras" name="CyanogenMod/android_system_extras" revision="cm-10.1"/>
 
   <!-- <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
-  <project path="system/media" name="CyanogenMod/android_system_media" />
+  
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" /> -->
-
+  <project path="system/media" name="CyanogenMod/android_system_media" revision="cm-10.1"/>
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" revision="cm-10.1"/>
+  
   <project path="vendor/cm" name="mer-hybris/android_vendor_cm" revision="hybris-10.1"/>
   <project path="device/common" name="CyanogenMod/android_device_common"/>
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery"/>
