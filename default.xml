@@ -22,7 +22,7 @@
            sync-j="6" />
 
   <!-- Include the Mer-hybris repos for packaging and images -->
-  <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="hybris-10.1"/>
+  <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master"/>
 
   <!-- Currently disabled due to repository being unavailable -->
   <project path="rpm" name="mer-hybris/droid-hal-device" revision="hybris-10.1"/>
@@ -128,5 +128,5 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="refs/tags/android-4.2.2_r1" />
   <!-- needed by at least libcrypto --> 
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.2.2_r1"/>
-
+  <project name="sailfishos/droidmedia" path="external/droidmedia" revision="master"/>
 </manifest>
