@@ -129,4 +129,6 @@
   <!-- needed by at least libcrypto --> 
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" remote="aosp" revision="refs/tags/android-4.2.2_r1"/>
   <project name="sailfishos/droidmedia" path="external/droidmedia" revision="master"/>
+  <project name="mer-hybris/audioflingerglue" path="external/audioflingerglue" revision="master"/>
+  
 </manifest>
